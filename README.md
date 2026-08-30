@@ -67,9 +67,8 @@ Small automation tools and API integrations for routine tasks.
 
 ## 📫 Contact
 
-- Discord: **scumbags**
-- Telegram: `ADD_YOUR_TELEGRAM`
-- Portfolio / website: `ADD_LATER`
+- Discord: **scumbagsss**
+- Telegram: `@dilarion`
 
 ---
 
