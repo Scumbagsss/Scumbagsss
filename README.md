@@ -67,7 +67,7 @@ remains private.
 - Async event processing
 - Abuse / anomaly detection systems
 
-**Repository:** [deadcity-discord-bot](https://github.com/Scumbagsss/deadcity-discord-bot)
+**Repository:** [deadcity-discord-bot](https://github.com/Scumbagsss/BOT)
 
 > Production source code, credentials, private configuration and proprietary modules are not publicly distributed.
 
