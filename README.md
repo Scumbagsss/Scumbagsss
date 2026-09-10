@@ -48,518 +48,599 @@ developer = {
     "complexity": "Any",
     "support": "Permanent",
 }
+```
 
 I specialize in developing Discord bots and automation systems with Python.
 
-My projects range from simple private utilities to large modular systems
-with databases, external APIs, administration panels, moderation workflows,
-monitoring, logging, application systems and game server integrations.
+My projects range from simple private utilities to large modular systems with databases, external APIs, administration panels, moderation workflows, monitoring, logging, application systems and game server integrations.
 
-I can develop both completely standalone Discord bots and large
-multi-module automation ecosystems.
+I can develop both completely standalone Discord bots and large multi-module automation ecosystems.
 
-I work with projects of any complexity.
+I work with projects of **any complexity**.
 
-📊 Development Experience
-40+ completed Discord bots
+---
+
+# 📊 Development Experience
+
+## 40+ completed Discord bots
 
 Over time I have worked on dozens of Discord automation systems for:
 
-Gaming communities
-DayZ servers
-STALKER RP projects
-Private communities
-Administration teams
-Support systems
-Marketplace systems
-Moderation departments
-RolePlay projects
-Server monitoring
-Application processing
-Internal automation
+- Gaming communities
+- DayZ servers
+- STALKER RP projects
+- Private communities
+- Administration teams
+- Support systems
+- Marketplace systems
+- Moderation departments
+- RolePlay projects
+- Server monitoring
+- Application processing
+- Internal automation
 
-The public repositories on this profile represent selected systems,
-modules and technical solutions from larger projects.
+The public repositories on this profile represent selected systems, modules and technical solutions from larger projects.
 
-Production versions, customer-specific configuration and private
-infrastructure remain closed.
+Production versions, customer-specific configuration and private infrastructure remain closed.
 
-🚀 Public Portfolio
+---
 
-Currently my GitHub contains 17+ showcase projects demonstrating
-different Discord automation systems.
+# 🚀 Public Portfolio
 
-🛡️ SpawnSet Dupe Detector
+Currently my GitHub contains **17+ showcase projects** demonstrating different Discord automation systems.
 
-Advanced system for detecting suspicious SpawnSet activity and possible
-duplication / administrative abuse on game servers.
+## 🛡️ SpawnSet Dupe Detector
 
-Features
-SpawnSet activity analysis
-Suspicious event detection
-Duplicate spawn detection
-Administrator activity tracking
-Case generation
-Event correlation
-Logging
-Confidence-based detections
-Automated staff notifications
-Configurable detection rules
+Advanced system for detecting suspicious SpawnSet activity and possible duplication / administrative abuse on game servers.
 
-Stack: Python • AsyncIO • Discord API • Log Processing • SQLite
+### Features
 
-🚗 DayZ Transport Market Bot
+- SpawnSet activity analysis
+- Suspicious event detection
+- Duplicate spawn detection
+- Administrator activity tracking
+- Case generation
+- Event correlation
+- Logging
+- Confidence-based detections
+- Automated staff notifications
+- Configurable detection rules
+
+**Stack:** Python • AsyncIO • Discord API • Log Processing • SQLite
+
+---
+
+## 🚗 DayZ Transport Market Bot
 
 Full Discord vehicle marketplace designed for DayZ / RP environments.
 
-Features
-Vehicle selling
-Vehicle buying
-Vehicle rental
-Ownership verification
-Vehicle registry
-Application moderation
-Administrator approval workflow
-Listing publication
-Reservation system
-Complaint system
-Marketplace blacklist
-Listing expiration
-Archive system
-Audit logging
-Discord buttons
-Discord modals
-Persistent database
+### Features
 
-Stack: Python • discord.py • SQLite • Discord UI • AsyncIO
+- Vehicle selling
+- Vehicle buying
+- Vehicle rental
+- Ownership verification
+- Vehicle registry
+- Application moderation
+- Administrator approval workflow
+- Listing publication
+- Reservation system
+- Complaint system
+- Marketplace blacklist
+- Listing expiration
+- Archive system
+- Audit logging
+- Discord buttons
+- Discord modals
+- Persistent database
 
-📋 RP Character Application Bot
+**Stack:** Python • discord.py • SQLite • Discord UI • AsyncIO
+
+---
+
+## 📋 RP Character Application Bot
 
 Advanced character application system for RolePlay servers.
 
-Features
-RP character applications
-Character questionnaires
-Staff moderation
-Application review
-Accept / reject workflow
-Revision requests
-Role assignment
-Application history
-Database storage
-Discord modal interfaces
-Staff-only controls
-Configurable application structure
+### Features
 
-Stack: Python • discord.py • SQLite • AsyncIO
+- RP character applications
+- Character questionnaires
+- Staff moderation
+- Application review
+- Accept / reject workflow
+- Revision requests
+- Role assignment
+- Application history
+- Database storage
+- Discord modal interfaces
+- Staff-only controls
+- Configurable application structure
 
-🎫 Advanced Discord Ticket Bot
+**Stack:** Python • discord.py • SQLite • AsyncIO
+
+---
+
+## 🎫 Advanced Discord Ticket Bot
 
 Large ticket and support workflow system.
 
-Features
-Multiple ticket categories
-Support departments
-Staff permissions
-Ticket creation panels
-Private support channels
-Ticket claiming
-Ticket closing
-Ticket transcripts
-Support roles
-Hidden support roles
-Logging
-Persistent buttons
-Database-backed ticket state
-Flexible configuration
+### Features
 
-Stack: Python • discord.py • SQLite • AsyncIO
+- Multiple ticket categories
+- Support departments
+- Staff permissions
+- Ticket creation panels
+- Private support channels
+- Ticket claiming
+- Ticket closing
+- Ticket transcripts
+- Support roles
+- Hidden support roles
+- Logging
+- Persistent buttons
+- Database-backed ticket state
+- Flexible configuration
 
-📊 DayZ Server Monitor Bot
+**Stack:** Python • discord.py • SQLite • AsyncIO
+
+---
+
+## 📊 DayZ Server Monitor Bot
 
 Discord monitoring system for DayZ servers.
 
-Features
-Server status monitoring
-Online player tracking
-Queue tracking
-Player statistics
-Automated Discord updates
-Status messages
-Server availability checks
-Periodic background tasks
-Historical data
-Server monitoring panels
+### Features
 
-Stack: Python • AsyncIO • Discord API • External APIs • SQLite
+- Server status monitoring
+- Online player tracking
+- Queue tracking
+- Player statistics
+- Automated Discord updates
+- Status messages
+- Server availability checks
+- Periodic background tasks
+- Historical data
+- Server monitoring panels
 
-⚡ Priority Access Bot
+**Stack:** Python • AsyncIO • Discord API • External APIs • SQLite
+
+---
+
+## ⚡ Priority Access Bot
 
 Automated priority access management system.
 
-Features
-Priority applications
-User verification
-Staff approval
-External API integration
-Automatic access assignment
-Application status tracking
-Logging
-Staff workflow
-Discord interface
-Persistent state
+### Features
 
-Stack: Python • discord.py • REST API • AsyncIO • SQLite
+- Priority applications
+- User verification
+- Staff approval
+- External API integration
+- Automatic access assignment
+- Application status tracking
+- Logging
+- Staff workflow
+- Discord interface
+- Persistent state
 
-🛠️ Discord Admin Control Panel
+**Stack:** Python • discord.py • REST API • AsyncIO • SQLite
+
+---
+
+## 🛠️ Discord Admin Control Panel
 
 Administration system for managing server functionality through Discord.
 
-Features
-Administrative controls
-Staff-only actions
-Server management
-Permission validation
-Discord button interface
-Configurable actions
-Logging
-Internal automation
-Safe permission checks
+### Features
 
-Stack: Python • discord.py • AsyncIO
+- Administrative controls
+- Staff-only actions
+- Server management
+- Permission validation
+- Discord button interface
+- Configurable actions
+- Logging
+- Internal automation
+- Safe permission checks
 
-⚙️ Discord Config Manager
+**Stack:** Python • discord.py • AsyncIO
+
+---
+
+## ⚙️ Discord Config Manager
 
 Remote configuration management system for Discord bots.
 
-Features
-Configuration editing
-JSON / JSONC support
-Runtime configuration management
-Administrator access
-Validation
-Safe editing
-Configurable modules
-Centralized settings
-Discord-based management
+### Features
 
-Stack: Python • JSON • JSONC • discord.py
+- Configuration editing
+- JSON / JSONC support
+- Runtime configuration management
+- Administrator access
+- Validation
+- Safe editing
+- Configurable modules
+- Centralized settings
+- Discord-based management
 
-📜 Discord Audit Log Bot
+**Stack:** Python • JSON • JSONC • discord.py
+
+---
+
+## 📜 Discord Audit Log Bot
 
 Advanced Discord server event logging system.
 
-Features
-Member event logging
-Role changes
-Channel changes
-Message events
-Moderation events
-Administrator actions
-Voice activity
-Server changes
-Structured embeds
-Dedicated log channels
-Event filtering
+### Features
 
-Stack: Python • discord.py • AsyncIO
+- Member event logging
+- Role changes
+- Channel changes
+- Message events
+- Moderation events
+- Administrator actions
+- Voice activity
+- Server changes
+- Structured embeds
+- Dedicated log channels
+- Event filtering
 
-🏴 Faction Reservation Bot
+**Stack:** Python • discord.py • AsyncIO
+
+---
+
+## 🏴 Faction Reservation Bot
 
 Faction management and reservation workflow for RolePlay communities.
 
-Features
-Faction applications
-Reservation requests
-Staff moderation
-Application review
-Faction status management
-User notifications
-Role integration
-Discord UI
-Database-backed state
-Administration workflow
+### Features
 
-Stack: Python • discord.py • SQLite • AsyncIO
+- Faction applications
+- Reservation requests
+- Staff moderation
+- Application review
+- Faction status management
+- User notifications
+- Role integration
+- Discord UI
+- Database-backed state
+- Administration workflow
 
-💬 Discord Feedback Manager
+**Stack:** Python • discord.py • SQLite • AsyncIO
+
+---
+
+## 💬 Discord Feedback Manager
 
 Player feedback and suggestion management system.
 
-Features
-Feedback panel
-Discord modal submission
-Automatic feedback storage
-Staff review channel
-Accept feedback for future patches
-Reject feedback
-Automatic rejected-message cleanup
-Persistent buttons
-Automatic panel restoration
-Automatic channel creation
-Staff permission detection
-SQLite database
-Feedback history
+### Features
 
-Stack: Python • discord.py • aiosqlite • AsyncIO
+- Feedback panel
+- Discord modal submission
+- Automatic feedback storage
+- Staff review channel
+- Accept feedback for future patches
+- Reject feedback
+- Automatic rejected-message cleanup
+- Persistent buttons
+- Automatic panel restoration
+- Automatic channel creation
+- Staff permission detection
+- SQLite database
+- Feedback history
 
-✏️ Discord Nickname Request Bot
+**Stack:** Python • discord.py • aiosqlite • AsyncIO
+
+---
+
+## ✏️ Discord Nickname Request Bot
 
 Moderated nickname change workflow.
 
-Features
-Nickname change applications
-Staff approval
-Staff rejection
-Validation
-Request history
-Automatic nickname updates
-Logging
-Discord interactions
-Permission control
+### Features
 
-Stack: Python • discord.py • AsyncIO
+- Nickname change applications
+- Staff approval
+- Staff rejection
+- Validation
+- Request history
+- Automatic nickname updates
+- Logging
+- Discord interactions
+- Permission control
 
-🏷️ Discord Role Prefix Bot
+**Stack:** Python • discord.py • AsyncIO
+
+---
+
+## 🏷️ Discord Role Prefix Bot
 
 Automatic nickname prefix management based on Discord roles.
 
-Features
-Role-based prefixes
-Automatic nickname updates
-Role priority
-Multiple prefix support
-Member update detection
-Configurable role mappings
-Automatic synchronization
-Permission checks
+### Features
 
-Stack: Python • discord.py • AsyncIO
+- Role-based prefixes
+- Automatic nickname updates
+- Role priority
+- Multiple prefix support
+- Member update detection
+- Configurable role mappings
+- Automatic synchronization
+- Permission checks
 
-📻 Temporary Radio Bot
+**Stack:** Python • discord.py • AsyncIO
+
+---
+
+## 📻 Temporary Radio Bot
 
 Dynamic temporary voice channel system for Discord communities.
 
-Features
-Automatic voice channel creation
-Temporary radio channels
-Dynamic channel deletion
-Voice state monitoring
-User-controlled rooms
-Permission management
-Role integration
-Automatic cleanup
-Persistent automation
+### Features
 
-Stack: Python • discord.py • Voice State API • AsyncIO
+- Automatic voice channel creation
+- Temporary radio channels
+- Dynamic channel deletion
+- Voice state monitoring
+- User-controlled rooms
+- Permission management
+- Role integration
+- Automatic cleanup
+- Persistent automation
 
-🚨 Admin Abuse Detector
+**Stack:** Python • discord.py • Voice State API • AsyncIO
+
+---
+
+## 🚨 Admin Abuse Detector
 
 Discord / game server administration abuse detection system.
 
-Features
-Administrator action tracking
-Suspicious activity detection
-Abuse pattern monitoring
-Staff notifications
-Event logging
-Automated alerts
-Permission-aware processing
-Configurable rules
+### Features
 
-Stack: Python • AsyncIO • Discord API • Log Processing
+- Administrator action tracking
+- Suspicious activity detection
+- Abuse pattern monitoring
+- Staff notifications
+- Event logging
+- Automated alerts
+- Permission-aware processing
+- Configurable rules
 
-📦 Forbidden Item Spawn Detector
+**Stack:** Python • AsyncIO • Discord API • Log Processing
+
+---
+
+## 📦 Forbidden Item Spawn Detector
 
 Automated detector for prohibited item spawning on game servers.
 
-Features
-Game server log processing
-Spawn event detection
-Forbidden item list
-Administrator identification
-Automated Discord alerts
-Evidence generation
-Event history
-Configurable detection rules
-Real-time monitoring
+### Features
 
-Stack: Python • AsyncIO • Log Processing • Discord API
+- Game server log processing
+- Spawn event detection
+- Forbidden item list
+- Administrator identification
+- Automated Discord alerts
+- Evidence generation
+- Event history
+- Configurable detection rules
+- Real-time monitoring
 
-🧰 Discord Support Workflow Bot
+**Stack:** Python • AsyncIO • Log Processing • Discord API
+
+---
+
+## 🧰 Discord Support Workflow Bot
 
 Combined support and staff workflow automation.
 
-Features
-Support requests
-Ticket workflow
-Staff processing
-User applications
-Nickname requests
-Status management
-User notifications
-Permission management
-Discord UI
-Persistent state
-Internal logging
+### Features
 
-Stack: Python • discord.py • SQLite • AsyncIO
+- Support requests
+- Ticket workflow
+- Staff processing
+- User applications
+- Nickname requests
+- Status management
+- User notifications
+- Permission management
+- Discord UI
+- Persistent state
+- Internal logging
 
-🔥 Main Ecosystem
-DeadCity — Discord Automation System
+**Stack:** Python • discord.py • SQLite • AsyncIO
 
-One of my largest projects is a private modular Discord automation
-ecosystem developed for a DayZ / STALKER RP environment.
+---
 
-Instead of relying on a single monolithic bot, the system is divided
-into independent services and modules responsible for different parts
-of the server infrastructure.
+# 🔥 Main Ecosystem
 
-Included systems
-Advanced ticket system
-RP character applications
-Player feedback
-Server monitoring
-Discord audit logging
-Role management
-Nickname automation
-Faction reservation
-Temporary radio channels
-Transport marketplace
-Vehicle ownership registry
-Priority access management
-Staff administration tools
-Abuse detection
-SpawnSet anomaly detection
-Forbidden item spawn detection
-Configuration management
-External API integrations
-SQLite-backed state
-Automated logging
-Persistent Discord interfaces
+## DeadCity — Discord Automation System
 
-Selected parts of this ecosystem are presented on GitHub as independent
-portfolio projects.
+One of my largest projects is a private modular Discord automation ecosystem developed for a DayZ / STALKER RP environment.
 
-The full production implementation is private.
+Instead of relying on a single monolithic bot, the system is divided into independent services and modules responsible for different parts of the server infrastructure.
 
-🧠 What I Work With
-Languages
-Python
-Discord Development
-discord.py
-Discord Cogs
-Discord Interactions
-Buttons
-Select menus
-Modals
-Persistent Views
-Slash commands
-Prefix commands
-Permission systems
-Role management
-Voice state events
-Member events
-Message events
-Async Development
-AsyncIO
-Background tasks
-Event-driven systems
-Concurrent operations
-Async database access
-API polling
-Monitoring workers
-Databases
-SQLite
-aiosqlite
-MySQL
-Database migrations
-Persistent state
-Application history
-Logging tables
-User state management
-APIs & Integrations
-REST APIs
-HTTP integrations
-Payment integrations
-Game server APIs
-External services
-Webhooks
-JSON APIs
-Infrastructure
-Linux
-Ubuntu
-VPS deployment
-systemd
-Environment configuration
-Bot auto-restart
-Logging
-Git
-GitHub
-🤖 What I Can Build
+### Included systems
 
-I accept Discord bot projects of any complexity.
+- Advanced ticket system
+- RP character applications
+- Player feedback
+- Server monitoring
+- Discord audit logging
+- Role management
+- Nickname automation
+- Faction reservation
+- Temporary radio channels
+- Transport marketplace
+- Vehicle ownership registry
+- Priority access management
+- Staff administration tools
+- Abuse detection
+- SpawnSet anomaly detection
+- Forbidden item spawn detection
+- Configuration management
+- External API integrations
+- SQLite-backed state
+- Automated logging
+- Persistent Discord interfaces
 
-Discord Bots
-Custom Discord bots
-Private bots
-Public community bots
-Multi-server bots
-Modular Discord platforms
-Complete Discord automation systems
-Moderation
-Automatic moderation
-Staff panels
-Moderation logs
-Warn systems
-Ban / mute workflows
-Staff action history
-Administrator abuse detection
-Tickets & Support
-Ticket systems
-Support departments
-Application systems
-Staff queues
-Ticket claiming
-Ticket archive
-Ticket history
-User support automation
-Automation
-Role automation
-Nickname automation
-Channel automation
-Voice channel automation
-Scheduled tasks
-Notification systems
-Automated server management
-Databases
-User databases
-Application databases
-Marketplace databases
-History systems
-Statistics
-Persistent bot state
-MySQL integrations
-SQLite integrations
-API Integrations
-REST APIs
-Game APIs
-Payment APIs
-Website integrations
-External services
-Custom backend integration
-Gaming Communities
-DayZ integrations
-STALKER RP systems
-Player monitoring
-Server monitoring
-Priority systems
-Faction management
-RP character systems
-Markets
-Administration automation
-Anti-abuse systems
-💼 Development Approach
+Selected parts of this ecosystem are presented on GitHub as independent portfolio projects.
+
+> The full production implementation is private.
+
+---
+
+# 🧠 What I Work With
+
+## Languages
+
+- Python
+
+## Discord Development
+
+- discord.py
+- Discord Cogs
+- Discord Interactions
+- Buttons
+- Select menus
+- Modals
+- Persistent Views
+- Slash commands
+- Prefix commands
+- Permission systems
+- Role management
+- Voice state events
+- Member events
+- Message events
+
+## Async Development
+
+- AsyncIO
+- Background tasks
+- Event-driven systems
+- Concurrent operations
+- Async database access
+- API polling
+- Monitoring workers
+
+## Databases
+
+- SQLite
+- aiosqlite
+- MySQL
+- Database migrations
+- Persistent state
+- Application history
+- Logging tables
+- User state management
+
+## APIs & Integrations
+
+- REST APIs
+- HTTP integrations
+- Payment integrations
+- Game server APIs
+- External services
+- Webhooks
+- JSON APIs
+
+## Infrastructure
+
+- Linux
+- Ubuntu
+- VPS deployment
+- systemd
+- Environment configuration
+- Bot auto-restart
+- Logging
+- Git
+- GitHub
+
+---
+
+# 🤖 What I Can Build
+
+I accept Discord bot projects of **any complexity**.
+
+## Discord Bots
+
+- Custom Discord bots
+- Private bots
+- Public community bots
+- Multi-server bots
+- Modular Discord platforms
+- Complete Discord automation systems
+
+## Moderation
+
+- Automatic moderation
+- Staff panels
+- Moderation logs
+- Warn systems
+- Ban / mute workflows
+- Staff action history
+- Administrator abuse detection
+
+## Tickets & Support
+
+- Ticket systems
+- Support departments
+- Application systems
+- Staff queues
+- Ticket claiming
+- Ticket archive
+- Ticket history
+- User support automation
+
+## Automation
+
+- Role automation
+- Nickname automation
+- Channel automation
+- Voice channel automation
+- Scheduled tasks
+- Notification systems
+- Automated server management
+
+## Databases
+
+- User databases
+- Application databases
+- Marketplace databases
+- History systems
+- Statistics
+- Persistent bot state
+- MySQL integrations
+- SQLite integrations
+
+## API Integrations
+
+- REST APIs
+- Game APIs
+- Payment APIs
+- Website integrations
+- External services
+- Custom backend integration
+
+## Gaming Communities
+
+- DayZ integrations
+- STALKER RP systems
+- Player monitoring
+- Server monitoring
+- Priority systems
+- Faction management
+- RP character systems
+- Markets
+- Administration automation
+- Anti-abuse systems
+
+---
+
+# 💼 Development Approach
 
 I don't limit bot development to basic Discord commands.
 
@@ -567,6 +648,7 @@ My goal is to build complete systems that automate real server processes.
 
 Depending on the project, a bot can include:
 
+```text
 Discord Interface
       │
       ├── Buttons / Modals / Menus
@@ -589,57 +671,67 @@ External Services
       ├── Website
       ├── Game Server
       └── Payment System
+```
 
-Projects can be designed from scratch according to the requirements of
-a specific Discord server or existing infrastructure.
+Projects can be designed from scratch according to the requirements of a specific Discord server or existing infrastructure.
 
-🏗️ Project Complexity
+---
+
+# 🏗️ Project Complexity
 
 I work with both simple and complex projects.
 
-Small
-Utility bots
-Role bots
-Notification bots
-Simple moderation
-Small private tools
-Medium
-Ticket systems
-Application bots
-Logging systems
-Moderation platforms
-Database integrations
-API integrations
-Large
-Multi-module Discord bots
-Gaming infrastructure
-Automated administration systems
-Marketplaces
-Monitoring platforms
-Multi-server architecture
-Complex databases
-External APIs
-Private backend integrations
-Custom
+## Small
 
-If a required system does not fit into a standard category,
-it can be designed specifically for the project.
+- Utility bots
+- Role bots
+- Notification bots
+- Simple moderation
+- Small private tools
 
-🔐 Private Production Code
+## Medium
+
+- Ticket systems
+- Application bots
+- Logging systems
+- Moderation platforms
+- Database integrations
+- API integrations
+
+## Large
+
+- Multi-module Discord bots
+- Gaming infrastructure
+- Automated administration systems
+- Marketplaces
+- Monitoring platforms
+- Multi-server architecture
+- Complex databases
+- External APIs
+- Private backend integrations
+
+## Custom
+
+If a required system does not fit into a standard category, it can be designed specifically for the project.
+
+---
+
+# 🔐 Private Production Code
 
 Most repositories on this GitHub are public portfolio showcases.
 
 They demonstrate:
 
-Project architecture
-System capabilities
-Technology stack
-Interfaces
-Development approach
-Selected public components
+- Project architecture
+- System capabilities
+- Technology stack
+- Interfaces
+- Development approach
+- Selected public components
 
-They do not contain the complete production implementation.
+They do **not** contain the complete production implementation.
 
+```text
 Public GitHub
 ├── Documentation
 ├── Architecture
@@ -655,42 +747,50 @@ Private Production
 ├── API keys
 ├── Database configuration
 └── Customer-specific integrations
+```
 
-Production source code, private modules, credentials and customer
-configuration are not publicly distributed.
+Production source code, private modules, credentials and customer configuration are not publicly distributed.
 
-🛡️ Code & Security
+---
+
+# 🛡️ Code & Security
 
 Private project data is never intentionally published.
 
 This includes:
 
-Discord bot tokens
-API keys
-Database passwords
-Customer credentials
-Private server IDs
-Internal infrastructure
-Production configuration
-Proprietary implementation
+- Discord bot tokens
+- API keys
+- Database passwords
+- Customer credentials
+- Private server IDs
+- Internal infrastructure
+- Production configuration
+- Proprietary implementation
 
-Public repositories are intended to demonstrate development experience
-and project architecture.
+Public repositories are intended to demonstrate development experience and project architecture.
 
-♾️ Support
+---
 
-Completed projects include permanent support.
+# ♾️ Support
+
+Completed projects include **permanent support**.
 
 Support may include:
 
-Bug fixes
-Deployment assistance
-Configuration help
-Compatibility fixes
-Technical consultation
-Help with bot startup
-Infrastructure-related fixes
-📈 Current Portfolio
+- Bug fixes
+- Deployment assistance
+- Configuration help
+- Compatibility fixes
+- Technical consultation
+- Help with bot startup
+- Infrastructure-related fixes
+
+---
+
+# 📈 Current Portfolio
+
+```text
 40+ Discord bots developed
 17+ public showcase projects
 Multiple production systems
@@ -698,5 +798,38 @@ Complex API integrations
 Database-backed automation
 Gaming server integrations
 Permanent project support
-📫 Contact
-<p> <b>Discord:</b> Scumbagsss </p> <p> <b>Telegram:</b> <a href="https://t.me/dilarion">@dilarion</a> </p> <p> <b>GitHub:</b> <a href="https://github.com/Scumbagsss">github.com/Scumbagsss</a> </p>
+```
+
+---
+
+# 📫 Contact
+
+<p>
+  <b>Discord:</b> Scumbagsss
+</p>
+
+<p>
+  <b>Telegram:</b>
+  <a href="https://t.me/dilarion">@dilarion</a>
+</p>
+
+<p>
+  <b>GitHub:</b>
+  <a href="https://github.com/Scumbagsss">github.com/Scumbagsss</a>
+</p>
+
+---
+
+<h3 align="center">Open to projects of any complexity</h3>
+
+<p align="center">
+  Discord Bots • Python • APIs • Databases • Automation • Game Servers
+</p>
+
+<p align="center">
+  <b>40+ Bots • 17+ Showcase Projects • Permanent Support</b>
+</p>
+
+<p align="center">
+  <i>Building complete systems, not just Discord commands.</i>
+</p>
