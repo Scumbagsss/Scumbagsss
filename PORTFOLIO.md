@@ -6,7 +6,7 @@ This page distinguishes **runnable code**, **private-source case studies** and *
 
 | Priority | Repository | Positioning |
 |---|---|---|
-| 1 | [priority-access-bot](https://github.com/Scumbagsss/priority-access-bot) | **Runnable FastAPI + SQLite**; sessions, permissions, 44 HTTP/database tests |
+| 1 | [priority-access-bot](https://github.com/Scumbagsss/priority-access-bot) | **FastAPI + PostgreSQL 16 + Docker + Alembic**; 26 PG integration tests, 44 SQLite tests |
 | 2 | [discord-config-manager](https://github.com/Scumbagsss/discord-config-manager) | **Runnable versioned settings backend**, SQLite, atomic writes, rollback, 36 tests |
 | 3 | [advanced-discord-ticket-bot](https://github.com/Scumbagsss/advanced-discord-ticket-bot) | Runnable ticket workflow, audit and transcript, 21 tests |
 | 4 | [dayz-server-monitor-bot](https://github.com/Scumbagsss/dayz-server-monitor-bot) | Runnable ingestion and reporting demo, 28 tests |
@@ -50,7 +50,7 @@ A good showcase states whether it is runnable; names its problem and technical s
 
 The current GitHub connection can change repository files but **cannot edit profile Bio, repository About/Topics, pinned repositories or archive status**. These suggestions are copy-ready; none have been applied automatically.
 
-**Profile Bio:** `Python Backend Developer | Automation Engineer | REST APIs, SQLite, Discord`
+**Profile Bio:** `Python Backend Developer | FastAPI, PostgreSQL, Docker | Automation`
 
 **Website / social link:** `https://t.me/dilarion`  
 **Discord handle (text):** `scumbagsss`
@@ -61,7 +61,7 @@ Set each under **Repository → About (gear icon)**. Keep descriptions concise a
 
 | Repository | Suggested About description | Suggested Topics |
 |---|---|---|
-| [priority-access-bot](https://github.com/Scumbagsss/priority-access-bot) | Runnable FastAPI demo with expiring bearer sessions, SQLite approvals and 44 tests. | `python`, `fastapi`, `rest-api`, `sqlite`, `authentication`, `backend` |
+| [priority-access-bot](https://github.com/Scumbagsss/priority-access-bot) | FastAPI with PostgreSQL 16, SQLAlchemy, Alembic, Docker Compose and CI; separate SQLite demo. | `python`, `fastapi`, `postgresql`, `sqlalchemy`, `docker`, `alembic` |
 | [discord-config-manager](https://github.com/Scumbagsss/discord-config-manager) | Runnable Python/SQLite settings service: optimistic versions, audit, batch transactions and 36 tests. | `python`, `sqlite`, `configuration`, `backend`, `automation`, `testing` |
 | [advanced-discord-ticket-bot](https://github.com/Scumbagsss/advanced-discord-ticket-bot) | Runnable Python/SQLite ticket workflow demo with audit history, staff rules and tests. | `python`, `sqlite`, `ticket-system`, `discord`, `automation` |
 | [dayz-server-monitor-bot](https://github.com/Scumbagsss/dayz-server-monitor-bot) | Runnable synthetic monitoring pipeline: JSONL, UTC timestamps, SQLite, metrics and tests. | `python`, `sqlite`, `data-processing`, `monitoring`, `dayz` |
