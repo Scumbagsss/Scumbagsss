@@ -1,0 +1,39 @@
+name: Profile documentation integrity
+
+on:
+  push:
+    paths:
+      - "*.md"
+      - "assets/**"
+      - "scripts/**"
+      - "tests/**"
+      - ".github/workflows/profile-docs.yml"
+  pull_request:
+    paths:
+      - "*.md"
+      - "assets/**"
+      - "scripts/**"
+      - "tests/**"
+      - ".github/workflows/profile-docs.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Check Python syntax
+        run: python -m compileall -q scripts tests
+      - name: Test link and SVG checker
+        run: python -m unittest discover -s tests -v
+      - name: Check profile documentation and SVGs
+        run: python scripts/check_portfolio.py
