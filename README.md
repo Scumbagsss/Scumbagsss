@@ -31,9 +31,10 @@ These are independently runnable **synthetic demonstrations** with no live Disco
 | Project | What you can inspect | Verification |
 |---|---|---|
 | **[Ticket Workflow Backend](https://github.com/Scumbagsss/advanced-discord-ticket-bot)** | SQLite storage, state transitions, staff permissions, audit history, HTML export | [CI](https://github.com/Scumbagsss/advanced-discord-ticket-bot/actions/workflows/python-demo.yml) · 21 unit tests |
-| **[Server Monitoring Pipeline](https://github.com/Scumbagsss/dayz-server-monitor-bot)** | JSONL ingestion, validation, UTC time normalization, deduplication, SQLite, daily metrics | [CI](https://github.com/Scumbagsss/dayz-server-monitor-bot/actions/workflows/monitor-demo.yml) · 28 unit tests |
+| **[Server Monitoring Pipeline](https://github.com/Scumbagsss/dayz-server-monitor-bot)** | JSONL ingestion, validation, UTC time normalization, atomic SQLite ingestion, daily metrics | [CI](https://github.com/Scumbagsss/dayz-server-monitor-bot/actions/workflows/monitor-demo.yml) · 28 unit tests |
+| **[Priority Access REST API](https://github.com/Scumbagsss/priority-access-bot)** | FastAPI, token-authenticated synthetic requests, approval state, transactional local entitlement records | [CI](https://github.com/Scumbagsss/priority-access-bot/actions/workflows/api-demo.yml) · 31 pytest tests |
 
-Both demos run on Python 3.11+ using only its standard library. They are **educational backend examples**, not complete commercial deployments.
+All three demos support Python 3.11+. The ticket and monitoring examples use only the standard library; the FastAPI API lists its third-party dependencies in `requirements-demo.txt`. All are **synthetic portfolio examples**, not complete commercial deployments.
 
 ## Commercial & private-source case studies
 
@@ -41,14 +42,13 @@ Both demos run on Python 3.11+ using only its standard library. They are **educa
 |---|---|---|
 | **[DeadCity Automation Platform](https://github.com/Scumbagsss/BOT)** | Player support, staff tools, moderation and server operations | Discord Cogs, async Python, persistence, integrations, logging |
 | **[SpawnSet Activity Investigation](https://github.com/Scumbagsss/spawnset-dupe-detector)** | Review of suspicious game-server activity and log relationships | Event processing, timelines, case state, data quality |
-| **[Priority Access Workflow](https://github.com/Scumbagsss/priority-access-bot)** | Identity checks, staff approval and entitlement delivery | REST integration, authorization, idempotency, failure handling |
 | **[Transport Marketplace](https://github.com/Scumbagsss/dayz-transport-market-bot)** | Moderated listings and reservations | Data modeling and multi-step workflows |
 
 Private projects are described through architecture, case-study documentation and limited interfaces. Sensitive code, player records and credentials remain excluded.
 
 ## Technical focus
 
-- **Backend:** Python, asyncio, service boundaries, validation, REST API consumers
+- **Backend:** Python, asyncio, FastAPI, service boundaries, validation, REST API consumers
 - **Data:** SQLite, aiosqlite, MySQL integrations, structured logs, historical snapshots
 - **Workflow design:** permissions, approval state, auditability, retry and duplicate-event handling
 - **Quality:** unit tests, GitHub Actions, reproducible synthetic examples and clear documentation
@@ -68,6 +68,6 @@ Open to **Python backend opportunities** and **commercial automation / integrati
 <details>
 <summary><b>По-русски</b></summary>
 
-Разрабатываю Python-системы автоматизации: сервисы с базами данных и API, Discord-интеграции, обработку событий и логов, административные процессы и инструменты для команд. В публичном портфолио есть два запускаемых демопроекта с тестами, а коммерческие проекты представлены как технические кейсы без публикации закрытого кода.
+Разрабатываю Python-системы автоматизации: сервисы с базами данных и API, Discord-интеграции, обработку событий и логов, административные процессы и инструменты для команд. В публичном портфолио есть три запускаемых демопроекта с тестами, а коммерческие проекты представлены как технические кейсы без публикации закрытого кода.
 
 </details>
