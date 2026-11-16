@@ -30,9 +30,9 @@ My focus is on systems people actually use: structured support requests, staff a
 | **[SpawnSet Dupe Detector](https://github.com/Scumbagsss/spawnset-dupe-detector)** | Investigation of suspicious patterns in game-server activity | Log parsing, correlation, time windows, case state, tests |
 | **[Priority Access Bot](https://github.com/Scumbagsss/priority-access-bot)** | Review and management of server-access entitlements | API integration, validation, authorization, state transitions |
 | **[DayZ Transport Market](https://github.com/Scumbagsss/dayz-transport-market-bot)** | Moderated vehicle listings, reservations and ownership workflows | Data modeling, permission checks, transactional workflows |
-| **[Discord Ticket System](https://github.com/Scumbagsss/advanced-discord-ticket-bot)** | Category-based support with staff actions and transcripts | Interaction design, persistent state, HTML export |
+| **[Discord Ticket Backend Demo](https://github.com/Scumbagsss/advanced-discord-ticket-bot)** | Runnable, fictional ticket workflow with a private commercial case study | Python 3.11+, SQLite, transactions, authorization rules, unit tests and CI |
 
-**Important:** Several repositories above are **portfolio case studies, not runnable open-source releases**. Proprietary code, server settings and user information remain private. This distinction is explained in each repository.
+**Important:** Some repositories above are **private-source portfolio case studies**, not deployable software. The [Discord Ticket Backend Demo](https://github.com/Scumbagsss/advanced-discord-ticket-bot) is a separate, runnable public implementation with synthetic data and automated tests. Proprietary code, server settings and personal data remain private.
 
 ## Engineering focus
 
