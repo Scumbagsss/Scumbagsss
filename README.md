@@ -32,11 +32,12 @@ These are independently runnable **synthetic demonstrations** with no live Disco
 
 | Project | What you can inspect | Verification |
 |---|---|---|
+| **[Priority Access REST API](https://github.com/Scumbagsss/priority-access-bot)** | FastAPI, salted passwords, revocable bearer sessions, staff permissions and transactional workflow | [CI](https://github.com/Scumbagsss/priority-access-bot/actions/workflows/api-demo.yml) · 44 pytest tests |
+| **[Versioned Config Backend](https://github.com/Scumbagsss/discord-config-manager)** | SQLite version conflicts, atomic batch updates, audit history and rollback | [CI](https://github.com/Scumbagsss/discord-config-manager/actions/workflows/config-demo.yml) · 36 unit tests |
 | **[Ticket Workflow Backend](https://github.com/Scumbagsss/advanced-discord-ticket-bot)** | SQLite storage, state transitions, staff permissions, audit history, HTML export | [CI](https://github.com/Scumbagsss/advanced-discord-ticket-bot/actions/workflows/python-demo.yml) · 21 unit tests |
 | **[Server Monitoring Pipeline](https://github.com/Scumbagsss/dayz-server-monitor-bot)** | JSONL ingestion, validation, UTC time normalization, atomic SQLite ingestion, daily metrics | [CI](https://github.com/Scumbagsss/dayz-server-monitor-bot/actions/workflows/monitor-demo.yml) · 28 unit tests |
-| **[Priority Access REST API](https://github.com/Scumbagsss/priority-access-bot)** | FastAPI, token-authenticated synthetic requests, approval state, transactional local entitlement records | [CI](https://github.com/Scumbagsss/priority-access-bot/actions/workflows/api-demo.yml) · 31 pytest tests |
 
-All three demos support Python 3.11+. The ticket and monitoring examples use only the standard library; the FastAPI API lists its third-party dependencies in `requirements-demo.txt`. All are **synthetic portfolio examples**, not complete commercial deployments.
+All four demos support Python 3.11+. The ticket, configuration and monitoring backends use only the standard library; the FastAPI API declares third-party dependencies in `requirements-demo.txt`. All are **synthetic portfolio examples**, not complete commercial deployments.
 
 ## Commercial & private-source case studies
 
@@ -57,7 +58,7 @@ Private projects are described through architecture, case-study documentation an
 
 ## Additional automation modules
 
-The full platform is documented through **12 smaller feature-level architecture showcases** grouped into operations, player support and moderation in the [module catalog](MODULE_CATALOG.md). These smaller repositories contain **non-runnable interface sketches**, not additional deployable products.
+The [module catalog](MODULE_CATALOG.md) organizes 12 feature-level showcases by operations, support and moderation. Eleven remain documentation-only; **Config Manager now additionally includes an independent runnable backend demo**. The private Discord modules themselves are not deployable from their public skeletons.
 
 ## Featured project: DeadCity
 
@@ -74,6 +75,6 @@ Open to **Python backend opportunities** and **commercial automation / integrati
 <details>
 <summary><b>По-русски</b></summary>
 
-Разрабатываю Python-системы автоматизации: сервисы с базами данных и API, Discord-интеграции, обработку событий и логов, административные процессы и инструменты для команд. В публичном портфолио есть три запускаемых демопроекта с тестами, а коммерческие проекты представлены как технические кейсы без публикации закрытого кода.
+Разрабатываю Python-системы автоматизации: сервисы с базами данных и API, Discord-интеграции, обработку событий и логов, административные процессы и инструменты для команд. В публичном портфолио есть четыре запускаемых демопроекта с тестами, а коммерческие проекты представлены как технические кейсы без публикации закрытого кода.
 
 </details>
