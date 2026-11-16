@@ -45,3 +45,41 @@ These are legitimate **feature-level documentation showcases**, not independent 
 ## Publishing standards
 
 A good showcase states whether it is runnable; names its problem and technical stack; provides evidence without inventing production metrics; avoids publishing private logs/identifiers; and uses an explicit authorization boundary for commercial assets.
+
+## GitHub profile settings — manual finishing steps
+
+The current GitHub connection can change repository files but **cannot edit profile Bio, repository About/Topics, pinned repositories or archive status**. These suggestions are copy-ready; none have been applied automatically.
+
+**Profile Bio:** `Python Backend Developer | Automation Engineer | REST APIs, SQLite, Discord`
+
+**Website / social link:** `https://t.me/dilarion`  
+**Discord handle (text):** `scumbagsss`
+
+### Repository About and Topics
+
+Set each under **Repository → About (gear icon)**. Keep descriptions concise and distinguish runnable examples from private case studies.
+
+| Repository | Suggested About description | Suggested Topics |
+|---|---|---|
+| [priority-access-bot](https://github.com/Scumbagsss/priority-access-bot) | Runnable FastAPI + SQLite approval API demo with tests; private Discord integration case study. | `python`, `fastapi`, `rest-api`, `sqlite`, `backend`, `automation` |
+| [advanced-discord-ticket-bot](https://github.com/Scumbagsss/advanced-discord-ticket-bot) | Runnable Python/SQLite ticket workflow demo with audit history, staff rules and tests. | `python`, `sqlite`, `ticket-system`, `discord`, `automation` |
+| [dayz-server-monitor-bot](https://github.com/Scumbagsss/dayz-server-monitor-bot) | Runnable synthetic monitoring pipeline: JSONL, UTC timestamps, SQLite, metrics and tests. | `python`, `sqlite`, `data-processing`, `monitoring`, `dayz` |
+| [BOT](https://github.com/Scumbagsss/BOT) | Private-source DeadCity operations platform case study: support, moderation and monitoring. | `python`, `discord`, `dayz`, `automation`, `case-study` |
+| [spawnset-dupe-detector](https://github.com/Scumbagsss/spawnset-dupe-detector) | Private-source DayZ activity investigation case study: logs, timelines and review workflows. | `python`, `log-analysis`, `dayz`, `case-study` |
+| [dayz-transport-market-bot](https://github.com/Scumbagsss/dayz-transport-market-bot) | Private-source Discord vehicle marketplace case study: listings, reservations and staff review. | `python`, `discord`, `marketplace`, `dayz`, `case-study` |
+
+### Recommended pinned repositories
+
+Click **Customize your pins** on your profile and select the six listed at the beginning of this document, in order if the interface permits. The profile repository `Scumbagsss` does not need its own pin because its README is already featured on your profile.
+
+### Archive candidates — verify before changing anything
+
+- [ ] `Scumbags`: currently empty public repository. Confirm there are no external links or future plans; archive if unused.
+- [ ] `Bot-Soc`: empty private repository. Keep if reserved for development; otherwise consider archiving.
+- [ ] `discord-support-workflow-bot`: overlaps the runnable ticket backend. Keep only if it documents a distinct feature beyond the parent case.
+- [ ] `discord-admin-control-panel`: overlaps `discord-config-manager`; archive only after preserving useful context and checking cross-links.
+- [ ] `forbidden-item-spawn-detector`: narrower than `deadcity-admin-abuse-detector`. Preserve if it needs a distinct case page; otherwise archive after review.
+
+**Do not archive/delete the privacy-policy repository just to reduce the public count.** It may be linked by a running application and includes a legal-name placeholder that should be resolved by the actual operator, not guessed.
+
+Use **Settings → General → Danger Zone → Archive this repository** after checking GitHub Pages, integrations, deployment links, issues and documentation references. Archiving is reversible and preserves history; deletion is not a routine cosmetic cleanup.
