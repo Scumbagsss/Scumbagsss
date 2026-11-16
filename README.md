@@ -12,7 +12,7 @@
 ![SQLite](https://img.shields.io/badge/SQLite-Persistence-003B57?style=flat-square&logo=sqlite&logoColor=white)
 ![Discord](https://img.shields.io/badge/discord.py-Integrations-5865F2?style=flat-square&logo=discord&logoColor=white)
 
-**[Runnable Python demos](#runnable--verifiable-python)** · **[Visual showcase](VISUAL_SHOWCASE.md)** · **[Commercial case studies](#commercial--private-source-case-studies)** · **[Project index](PORTFOLIO.md)**
+**[Runnable Python demos](#runnable--verifiable-python)** · **[Visual showcase](VISUAL_SHOWCASE.md)** · **[Commercial case studies](#commercial--private-source-case-studies)** · **[Module catalog](MODULE_CATALOG.md)** · **[Project index](PORTFOLIO.md)**
 
 </div>
 
@@ -54,6 +54,10 @@ Private projects are described through architecture, case-study documentation an
 - **Data:** SQLite, aiosqlite, MySQL integrations, structured logs, historical snapshots
 - **Workflow design:** permissions, approval state, auditability, retry and duplicate-event handling
 - **Quality:** unit tests, GitHub Actions, reproducible synthetic examples and clear documentation
+
+## Additional automation modules
+
+The full platform is documented through **12 smaller feature-level architecture showcases** grouped into operations, player support and moderation in the [module catalog](MODULE_CATALOG.md). These smaller repositories contain **non-runnable interface sketches**, not additional deployable products.
 
 ## Featured project: DeadCity
 
