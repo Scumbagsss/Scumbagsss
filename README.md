@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/profile-cover.svg" alt="Scumbagsss — Python Backend and Automation Engineering portfolio" width="100%" />
+
 # Scumbagsss
 ### Python Backend · Automation Engineering
 
