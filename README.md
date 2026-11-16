@@ -12,7 +12,7 @@
 ![SQLite](https://img.shields.io/badge/SQLite-Persistence-003B57?style=flat-square&logo=sqlite&logoColor=white)
 ![Discord](https://img.shields.io/badge/discord.py-Integrations-5865F2?style=flat-square&logo=discord&logoColor=white)
 
-**[Runnable Python demos](#runnable--verifiable-python)** · **[Commercial case studies](#commercial--private-source-case-studies)** · **[Project index](PORTFOLIO.md)**
+**[Runnable Python demos](#runnable--verifiable-python)** · **[Visual showcase](VISUAL_SHOWCASE.md)** · **[Commercial case studies](#commercial--private-source-case-studies)** · **[Project index](PORTFOLIO.md)**
 
 </div>
 
