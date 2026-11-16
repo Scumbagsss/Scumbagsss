@@ -1,15 +1,15 @@
 # Module catalog — Discord and DayZ automation
 
-This catalog organizes **12 smaller, private-source feature showcases** into three domains. They are kept as background evidence of system scope, not as 12 independently deployable products.
+This catalog organizes **12 feature-level showcases** into three domains. Most describe private-source modules; **Config Manager additionally includes a separate runnable SQLite backend demo**. These are not 12 independent commercial products.
 
-**Read this first:** Each public module contains a deliberately non-runnable interface skeleton and documentation. Its `NotImplementedError` methods are **not production code**. Architecture documents describe concerns and recommended verification steps; they do not certify the private deployment. The portfolio's three independently runnable projects are listed in the [reviewer guide](REVIEWERS.md).
+**Read this first:** The private-system interface sketches in these repositories deliberately raise `NotImplementedError`; they are **not production code**. The new [Config Manager demo](https://github.com/Scumbagsss/discord-config-manager) is independent of its private interface sketch. Architecture documents are not proof of deployment. The portfolio's **four** runnable examples are in the [reviewer guide](REVIEWERS.md).
 
 ## Operations and server management
 
 | Module | Responsibility | Most relevant engineering questions |
 |---|---|---|
 | [Admin Control Panel](https://github.com/Scumbagsss/discord-admin-control-panel) | Role-gated Discord entry point for operational tools | Server-side permission checks, stale controls, routing to subsystem adapters |
-| [Config Manager](https://github.com/Scumbagsss/discord-config-manager) | JSON/JSONC configuration operations | Validation, secret redaction, backups, concurrent edits |
+| [Config Manager](https://github.com/Scumbagsss/discord-config-manager) | Private JSON/JSONC case + runnable synthetic SQLite settings backend | Expected versions, atomic batches, audit and rollback (36 tests) |
 | [Role Prefix Manager](https://github.com/Scumbagsss/discord-role-prefix-bot) | Role-based nickname normalization | Idempotency, role precedence, event loops, permissions |
 | [Temporary Radio Channels](https://github.com/Scumbagsss/temporary-radio-bot) | Create-on-join voice rooms | Voice-event races, owner recovery, safe cleanup |
 
@@ -40,7 +40,7 @@ These pages were originally published as *module-level portfolio entries*. In a 
 - **Forbidden Item Spawn Monitoring** is a narrower feature of **Admin Activity Monitoring**.
 - **Admin Control Panel** describes a front-end to settings that are also addressed in **Config Manager**.
 
-For an employer, the recommended entry points remain the [three runnable backends](REVIEWERS.md), [DeadCity platform case study](https://github.com/Scumbagsss/BOT), [SpawnSet investigation](https://github.com/Scumbagsss/spawnset-dupe-detector) and [Vehicle Marketplace](https://github.com/Scumbagsss/dayz-transport-market-bot).
+For an employer, the recommended entry points remain the [four runnable backends](REVIEWERS.md), [DeadCity platform case study](https://github.com/Scumbagsss/BOT), [SpawnSet investigation](https://github.com/Scumbagsss/spawnset-dupe-detector) and [Vehicle Marketplace](https://github.com/Scumbagsss/dayz-transport-market-bot).
 
 ## Publication / archival policy
 
