@@ -30,8 +30,8 @@ These are independently runnable **synthetic demonstrations** with no live Disco
 
 | Project | What you can inspect | Verification |
 |---|---|---|
-| **[Ticket Workflow Backend](https://github.com/Scumbagsss/advanced-discord-ticket-bot)** | SQLite storage, state transitions, staff permissions, audit history, HTML export | [CI](https://github.com/Scumbagsss/advanced-discord-ticket-bot/actions/workflows/python-demo.yml) · 19 unit tests |
-| **[Server Monitoring Pipeline](https://github.com/Scumbagsss/dayz-server-monitor-bot)** | JSONL ingestion, validation, UTC time normalization, deduplication, SQLite, daily metrics | [CI](https://github.com/Scumbagsss/dayz-server-monitor-bot/actions/workflows/monitor-demo.yml) · 26 unit tests |
+| **[Ticket Workflow Backend](https://github.com/Scumbagsss/advanced-discord-ticket-bot)** | SQLite storage, state transitions, staff permissions, audit history, HTML export | [CI](https://github.com/Scumbagsss/advanced-discord-ticket-bot/actions/workflows/python-demo.yml) · 21 unit tests |
+| **[Server Monitoring Pipeline](https://github.com/Scumbagsss/dayz-server-monitor-bot)** | JSONL ingestion, validation, UTC time normalization, deduplication, SQLite, daily metrics | [CI](https://github.com/Scumbagsss/dayz-server-monitor-bot/actions/workflows/monitor-demo.yml) · 28 unit tests |
 
 Both demos run on Python 3.11+ using only its standard library. They are **educational backend examples**, not complete commercial deployments.
 
