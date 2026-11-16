@@ -1,17 +1,20 @@
 # Technical reviewer guide
 
-**Goal:** evaluate public, runnable Python engineering samples in about 5–10 minutes. All inputs are synthetic and both demos work without Discord, private game servers, API keys or paid services.
+**Goal:** evaluate the public Python engineering samples quickly. All examples use synthetic data and do not connect to private Discord/game-server systems. The FastAPI demo needs **locally generated demo-only API keys**, not commercial secrets.
 
 ## Start here
 
-| Repository | What it proves | Run / inspect |
+| Project | Backend focus | What to inspect |
 |---|---|---|
-| [Ticket Workflow Backend](https://github.com/Scumbagsss/advanced-discord-ticket-bot) | SQLite transactions, workflow state, permissions, audit history and escaped HTML exports | [Source](https://github.com/Scumbagsss/advanced-discord-ticket-bot/blob/main/ticket_demo.py) · [Tests](https://github.com/Scumbagsss/advanced-discord-ticket-bot/tree/main/tests) · [CI](https://github.com/Scumbagsss/advanced-discord-ticket-bot/actions/workflows/python-demo.yml) |
-| [Server Monitoring Pipeline](https://github.com/Scumbagsss/dayz-server-monitor-bot) | Input validation, timezone normalization, repeatable ingestion, atomic batch persistence and aggregates | [Source](https://github.com/Scumbagsss/dayz-server-monitor-bot/blob/main/monitor_demo.py) · [Tests](https://github.com/Scumbagsss/dayz-server-monitor-bot/tree/main/tests) · [CI](https://github.com/Scumbagsss/dayz-server-monitor-bot/actions/workflows/monitor-demo.yml) |
+| [Priority Access REST API](https://github.com/Scumbagsss/priority-access-bot) | FastAPI, HTTP auth, permissions, SQLite approval transactions, concurrency, audit and expiry projection | [Source](https://github.com/Scumbagsss/priority-access-bot/blob/main/api_demo/main.py) · [31 tests](https://github.com/Scumbagsss/priority-access-bot/blob/main/tests/test_api_demo.py) · [CI](https://github.com/Scumbagsss/priority-access-bot/actions/workflows/api-demo.yml) |
+| [Ticket Workflow Backend](https://github.com/Scumbagsss/advanced-discord-ticket-bot) | SQLite state transitions, permissions, audit history and escaped HTML export | [Source](https://github.com/Scumbagsss/advanced-discord-ticket-bot/blob/main/ticket_demo.py) · [Tests](https://github.com/Scumbagsss/advanced-discord-ticket-bot/tree/main/tests) · [CI](https://github.com/Scumbagsss/advanced-discord-ticket-bot/actions/workflows/python-demo.yml) |
+| [Server Monitoring Pipeline](https://github.com/Scumbagsss/dayz-server-monitor-bot) | Validation, UTC timestamp normalization, batch ingestion, atomic SQLite writes and summaries | [Source](https://github.com/Scumbagsss/dayz-server-monitor-bot/blob/main/monitor_demo.py) · [Tests](https://github.com/Scumbagsss/dayz-server-monitor-bot/tree/main/tests) · [CI](https://github.com/Scumbagsss/dayz-server-monitor-bot/actions/workflows/monitor-demo.yml) |
 
-**Both projects:** Python 3.11+, no third-party dependencies for their standalone demonstrations.
+**Versions:** Python 3.11+. Ticket and monitoring examples need only the Python standard library. The FastAPI example has a `requirements-demo.txt` file for external dependencies.
 
-## Five-minute local review
+## Quick local review
+
+Run the two standard-library demos separately:
 
 ```bash
 git clone https://github.com/Scumbagsss/advanced-discord-ticket-bot.git
@@ -20,8 +23,6 @@ python -m unittest discover -s tests -v
 python ticket_demo.py --db example.sqlite3
 ```
 
-In another folder:
-
 ```bash
 git clone https://github.com/Scumbagsss/dayz-server-monitor-bot.git
 cd dayz-server-monitor-bot
@@ -29,24 +30,31 @@ python -m unittest discover -s tests -v
 python monitor_demo.py --db example.sqlite3
 ```
 
-Local `*.sqlite3` files are deliberately ignored by Git. The server monitor consumes a fabricated JSONL file in `fixtures/`.
+To run the API tests (in its own folder):
 
-## What to look for
+```bash
+git clone https://github.com/Scumbagsss/priority-access-bot.git
+cd priority-access-bot
+python -m pip install -r requirements-demo.txt
+python -m pytest -q tests/test_api_demo.py
+```
 
-- **Ticket demo:** authorization is explicit, workflow transitions are validated, audit events are stored in SQLite, closed tickets cannot be silently modified, and user content is escaped in HTML output. Its caller-supplied `Actor` is **not** real authentication.
-- **Monitor demo:** invalid records are rejected, timestamps are stored in UTC, retries upsert the same sample rather than duplicating it, and JSONL imports validate the complete batch before committing. Daily availability is *sample-based*, not a time-weighted SLA.
+To start the HTTP service locally, follow the [FastAPI walkthrough](https://github.com/Scumbagsss/priority-access-bot/blob/main/docs/API_DEMO.md). It requires two distinct demo keys in environment variables and binds to `127.0.0.1` in the documented example.
 
-## CI status and scope
+## What the demos prove
 
-As of the latest reviewed source update on **16 November 2026**, the public demos have **21** and **28** unit tests respectively. Both workflows passed their GitHub Actions checks on Python 3.11, 3.12 and 3.13.
+- **Priority REST API:** test-only server-side identities, request validation, ownership checks, staff-only review, idempotent decisions and atomic creation of *local* entitlements. It does not contact Steam or grant real game-server privileges.
+- **Ticket:** workflow and transaction logic, audit events, owner/staff actions, HTML encoding; a caller-provided `Actor` is **not** production authentication.
+- **Monitoring:** input constraints, UTC timestamps, upsert-based retry behavior, whole-batch validation before commit and sample-based daily metrics.
 
-A green test suite is evidence that *the included scenarios passed*, not a production reliability or security guarantee.
+## CI and coverage scope
 
-## Private-source case studies
+On 16 November 2026, the three synthetic test suites covered **31**, **21** and **28** test cases, respectively; their GitHub Actions checks succeeded across Python 3.11, 3.12 and 3.13. This is not a measure of production uptime, end-to-end coverage or security certification.
 
-The [DeadCity platform](https://github.com/Scumbagsss/BOT), [activity investigation subsystem](https://github.com/Scumbagsss/spawnset-dupe-detector), [priority access workflow](https://github.com/Scumbagsss/priority-access-bot) and [vehicle marketplace](https://github.com/Scumbagsss/dayz-transport-market-bot) are **not deployable from their public repositories**. They document architecture, workflows, engineering trade-offs and publication boundaries. Some source fragments are deliberately unimplemented.
+## Private-source engineering case studies
+
+[DeadCity](https://github.com/Scumbagsss/BOT), [SpawnSet investigation](https://github.com/Scumbagsss/spawnset-dupe-detector), the [private priority workflow](https://github.com/Scumbagsss/priority-access-bot/blob/main/docs/ARCHITECTURE.md) and [Transport Marketplace](https://github.com/Scumbagsss/dayz-transport-market-bot) document commercial designs without releasing sensitive source. Some public interfaces are intentionally unimplemented.
 
 ## Contact
 
-- Discord: `scumbagsss`
-- Telegram: [@dilarion](https://t.me/dilarion)
+**Discord:** `scumbagsss` · **Telegram:** [@dilarion](https://t.me/dilarion)
