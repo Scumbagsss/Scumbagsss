@@ -10,6 +10,8 @@
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/Scumbagsss?tab=repositories)
 ![AsyncIO](https://img.shields.io/badge/asyncio-Event%20Processing-334155?style=flat-square)
 ![SQLite](https://img.shields.io/badge/SQLite-Persistence-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Discord](https://img.shields.io/badge/discord.py-Integrations-5865F2?style=flat-square&logo=discord&logoColor=white)
 
 **[Runnable Python demos](#runnable--verifiable-python)** · **[Visual showcase](VISUAL_SHOWCASE.md)** · **[Commercial case studies](#commercial--private-source-case-studies)** · **[Module catalog](MODULE_CATALOG.md)** · **[Project index](PORTFOLIO.md)**
@@ -22,7 +24,7 @@
 
 I build Python automation and backend services for community operations, server infrastructure and workflows that need **reliable state, clear audit trails and useful integrations**.
 
-My work includes asynchronous Discord applications, REST API consumers, SQLite-backed services, log/event analysis and staff approval systems.
+My work includes asynchronous Discord applications, FastAPI services, REST APIs, SQLite/PostgreSQL persistence, Docker deployments, log/event analysis and staff approval systems.
 
 This portfolio separates **verifiable public code** from **documented commercial projects**. There is no claim that private-source demonstrations can be installed from their public skeletons.
 
@@ -32,12 +34,14 @@ These are independently runnable **synthetic demonstrations** with no live Disco
 
 | Project | What you can inspect | Verification |
 |---|---|---|
-| **[Priority Access REST API](https://github.com/Scumbagsss/priority-access-bot)** | FastAPI, salted passwords, revocable bearer sessions, staff permissions and transactional workflow | [CI](https://github.com/Scumbagsss/priority-access-bot/actions/workflows/api-demo.yml) · 44 pytest tests |
+| **[Priority Access REST API](https://github.com/Scumbagsss/priority-access-bot)** | **PostgreSQL 16 + Docker Compose + SQLAlchemy 2 + Alembic**, plus standalone SQLite demo | [PostgreSQL CI](https://github.com/Scumbagsss/priority-access-bot/actions/workflows/postgres-service.yml) · 26 integration tests + [SQLite CI](https://github.com/Scumbagsss/priority-access-bot/actions/workflows/api-demo.yml) · 44 tests |
 | **[Versioned Config Backend](https://github.com/Scumbagsss/discord-config-manager)** | SQLite version conflicts, atomic batch updates, audit history and rollback | [CI](https://github.com/Scumbagsss/discord-config-manager/actions/workflows/config-demo.yml) · 36 unit tests |
 | **[Ticket Workflow Backend](https://github.com/Scumbagsss/advanced-discord-ticket-bot)** | SQLite storage, state transitions, staff permissions, audit history, HTML export | [CI](https://github.com/Scumbagsss/advanced-discord-ticket-bot/actions/workflows/python-demo.yml) · 21 unit tests |
 | **[Server Monitoring Pipeline](https://github.com/Scumbagsss/dayz-server-monitor-bot)** | JSONL ingestion, validation, UTC time normalization, atomic SQLite ingestion, daily metrics | [CI](https://github.com/Scumbagsss/dayz-server-monitor-bot/actions/workflows/monitor-demo.yml) · 28 unit tests |
 
-All four demos support Python 3.11+. The ticket, configuration and monitoring backends use only the standard library; the FastAPI API declares third-party dependencies in `requirements-demo.txt`. All are **synthetic portfolio examples**, not complete commercial deployments.
+All four projects support Python 3.11+. The ticket, configuration and monitoring demos use only the standard library; Priority Access provides both a lightweight SQLite API and a **separate Dockerized PostgreSQL variant**. All use synthetic data; the PostgreSQL stack is deployable locally but **not hardened for public internet exposure**.
+
+**Deployment walkthrough:** [PostgreSQL + Docker + Alembic](https://github.com/Scumbagsss/priority-access-bot/blob/main/docs/POSTGRES_DEPLOYMENT.md). Across four projects, **five public test suites contain 155 tests** (44 + 26 + 36 + 21 + 28); Docker Compose has an additional CI smoke check.
 
 ## Commercial & private-source case studies
 
@@ -51,10 +55,10 @@ Private projects are described through architecture, case-study documentation an
 
 ## Technical focus
 
-- **Backend:** Python, asyncio, FastAPI, service boundaries, validation, REST API consumers
-- **Data:** SQLite, aiosqlite, MySQL integrations, structured logs, historical snapshots
+- **Backend:** Python, asyncio, FastAPI, SQLAlchemy 2, Alembic, service boundaries, validation, REST APIs
+- **Data & deployment:** PostgreSQL 16, SQLite, aiosqlite, Docker Compose, MySQL integrations, structured logs
 - **Workflow design:** permissions, approval state, auditability, retry and duplicate-event handling
-- **Quality:** unit tests, GitHub Actions, reproducible synthetic examples and clear documentation
+- **Quality:** unit/integration tests, GitHub Actions PostgreSQL services, Docker smoke tests, reproducible examples and documentation
 
 ## Additional automation modules
 
@@ -75,6 +79,6 @@ Open to **Python backend opportunities** and **commercial automation / integrati
 <details>
 <summary><b>По-русски</b></summary>
 
-Разрабатываю Python-системы автоматизации: сервисы с базами данных и API, Discord-интеграции, обработку событий и логов, административные процессы и инструменты для команд. В публичном портфолио есть четыре запускаемых демопроекта с тестами, а коммерческие проекты представлены как технические кейсы без публикации закрытого кода.
+Разрабатываю Python-системы автоматизации: сервисы с базами данных и API, Discord-интеграции, обработку событий и логов, административные процессы и инструменты для команд. В публичном портфолио есть четыре запускаемых проекта, включая API на PostgreSQL с Docker и Alembic, с тестами и CI, а коммерческие проекты представлены как технические кейсы без публикации закрытого кода.
 
 </details>
