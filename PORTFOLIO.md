@@ -6,11 +6,11 @@ This page distinguishes **runnable code**, **private-source case studies** and *
 
 | Priority | Repository | Positioning |
 |---|---|---|
-| 1 | [advanced-discord-ticket-bot](https://github.com/Scumbagsss/advanced-discord-ticket-bot) | Runnable Python/SQLite ticket-workflow demo with automated tests |
-| 2 | [dayz-server-monitor-bot](https://github.com/Scumbagsss/dayz-server-monitor-bot) | Runnable ingestion, persistence and reporting demo with CI |
-| 3 | [BOT](https://github.com/Scumbagsss/BOT) | DeadCity private-source platform case study |
-| 4 | [spawnset-dupe-detector](https://github.com/Scumbagsss/spawnset-dupe-detector) | Log-analysis and case-management architecture |
-| 5 | [priority-access-bot](https://github.com/Scumbagsss/priority-access-bot) | External entitlement API and authorization workflow |
+| 1 | [priority-access-bot](https://github.com/Scumbagsss/priority-access-bot) | **Runnable FastAPI + SQLite** entitlement demo, HTTP auth, 31 tests, CI |
+| 2 | [advanced-discord-ticket-bot](https://github.com/Scumbagsss/advanced-discord-ticket-bot) | Runnable SQLite ticket workflow and audit history, 21 tests |
+| 3 | [dayz-server-monitor-bot](https://github.com/Scumbagsss/dayz-server-monitor-bot) | Runnable ingestion, persistence and reporting demo, 28 tests |
+| 4 | [BOT](https://github.com/Scumbagsss/BOT) | DeadCity private-source platform case study |
+| 5 | [spawnset-dupe-detector](https://github.com/Scumbagsss/spawnset-dupe-detector) | Log-analysis and case-management architecture |
 | 6 | [dayz-transport-market-bot](https://github.com/Scumbagsss/dayz-transport-market-bot) | Moderated marketplace and multi-step state |
 
 ## Other public case studies (optional depth)
