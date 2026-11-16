@@ -8,11 +8,11 @@
 
 The [DeadCity portfolio case study](https://github.com/Scumbagsss/BOT) documents support workflows, moderation signals, server-status integration and staff reviews. The [technical review](https://github.com/Scumbagsss/BOT/blob/main/docs/TECHNICAL_REVIEW.md) separates verified archive findings from proposed refactor work.
 
-## 2. Priority access — FastAPI + SQLite
+## 2. Priority access — FastAPI with SQLite and PostgreSQL variants
 
 ![Synthetic FastAPI approval workflow](https://raw.githubusercontent.com/Scumbagsss/priority-access-bot/main/assets/api-demo.svg)
 
-The [runnable REST demo](https://github.com/Scumbagsss/priority-access-bot) uses fictional identities and **local SQLite entitlements only**. Session authentication, staff authorization, duplicate approvals and concurrency are covered by [44 tests](https://github.com/Scumbagsss/priority-access-bot/blob/main/tests/test_api_demo.py). It never calls the commercial access API.
+The [runnable REST examples](https://github.com/Scumbagsss/priority-access-bot) use fictional identities and **local-only entitlements**. One runs on SQLite ([44 tests](https://github.com/Scumbagsss/priority-access-bot/blob/main/tests/test_api_demo.py)); the separate [PostgreSQL + Docker + Alembic variant](https://github.com/Scumbagsss/priority-access-bot/blob/main/docs/POSTGRES_DEPLOYMENT.md) has [26 integration tests](https://github.com/Scumbagsss/priority-access-bot/blob/main/tests_postgres/test_api.py) and a Docker Compose smoke test. Neither calls the commercial access API.
 
 ## 3. Ticket lifecycle — local backend
 
