@@ -63,7 +63,7 @@ A reviewed private source snapshot included **27 locally passing tests in its ac
 
 Open to **Python backend opportunities** and **commercial automation / integrations**.
 
-Contact me through [GitHub](https://github.com/Scumbagsss).
+**Contact:** Discord — `scumbagsss` · Telegram — [@dilarion](https://t.me/dilarion) · [GitHub](https://github.com/Scumbagsss).
 
 <details>
 <summary><b>По-русски</b></summary>
