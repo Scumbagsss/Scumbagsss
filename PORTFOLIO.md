@@ -6,22 +6,22 @@ This page distinguishes **runnable code**, **private-source case studies** and *
 
 | Priority | Repository | Positioning |
 |---|---|---|
-| 1 | [priority-access-bot](https://github.com/Scumbagsss/priority-access-bot) | **Runnable FastAPI + SQLite** entitlement demo, HTTP auth, 31 tests, CI |
-| 2 | [advanced-discord-ticket-bot](https://github.com/Scumbagsss/advanced-discord-ticket-bot) | Runnable SQLite ticket workflow and audit history, 21 tests |
-| 3 | [dayz-server-monitor-bot](https://github.com/Scumbagsss/dayz-server-monitor-bot) | Runnable ingestion, persistence and reporting demo, 28 tests |
-| 4 | [BOT](https://github.com/Scumbagsss/BOT) | DeadCity private-source platform case study |
-| 5 | [spawnset-dupe-detector](https://github.com/Scumbagsss/spawnset-dupe-detector) | Log-analysis and case-management architecture |
-| 6 | [dayz-transport-market-bot](https://github.com/Scumbagsss/dayz-transport-market-bot) | Moderated marketplace and multi-step state |
+| 1 | [priority-access-bot](https://github.com/Scumbagsss/priority-access-bot) | **Runnable FastAPI + SQLite**; sessions, permissions, 44 HTTP/database tests |
+| 2 | [discord-config-manager](https://github.com/Scumbagsss/discord-config-manager) | **Runnable versioned settings backend**, SQLite, atomic writes, rollback, 36 tests |
+| 3 | [advanced-discord-ticket-bot](https://github.com/Scumbagsss/advanced-discord-ticket-bot) | Runnable ticket workflow, audit and transcript, 21 tests |
+| 4 | [dayz-server-monitor-bot](https://github.com/Scumbagsss/dayz-server-monitor-bot) | Runnable ingestion and reporting demo, 28 tests |
+| 5 | [BOT](https://github.com/Scumbagsss/BOT) | DeadCity private-source platform case study |
+| 6 | [spawnset-dupe-detector](https://github.com/Scumbagsss/spawnset-dupe-detector) | Event analysis and case-management architecture |
 
 ## Other public case studies (optional depth)
 
-These are legitimate **feature-level documentation showcases**, not independent runnable services.
+These are **feature-level documentation showcases**, rather than independent runnable services. The separate [Config Manager](https://github.com/Scumbagsss/discord-config-manager) synthetic backend now appears in the six recommended pins.
 
 | Area | Repositories |
 |---|---|
 | Moderation | [deadcity-admin-abuse-detector](https://github.com/Scumbagsss/deadcity-admin-abuse-detector), [forbidden-item-spawn-detector](https://github.com/Scumbagsss/forbidden-item-spawn-detector), [discord-audit-log-bot](https://github.com/Scumbagsss/discord-audit-log-bot) |
 | Support & review | [discord-support-workflow-bot](https://github.com/Scumbagsss/discord-support-workflow-bot), [rp-character-application-bot](https://github.com/Scumbagsss/rp-character-application-bot), [discord-nickname-request-bot](https://github.com/Scumbagsss/discord-nickname-request-bot), [discord-feedback-manager](https://github.com/Scumbagsss/discord-feedback-manager) |
-| Operations | [discord-admin-control-panel](https://github.com/Scumbagsss/discord-admin-control-panel), [discord-config-manager](https://github.com/Scumbagsss/discord-config-manager), [discord-role-prefix-bot](https://github.com/Scumbagsss/discord-role-prefix-bot) |
+| Operations | [discord-admin-control-panel](https://github.com/Scumbagsss/discord-admin-control-panel), [discord-role-prefix-bot](https://github.com/Scumbagsss/discord-role-prefix-bot) |
 | Community | [faction-reservation-bot](https://github.com/Scumbagsss/faction-reservation-bot), [temporary-radio-bot](https://github.com/Scumbagsss/temporary-radio-bot) |
 
 ## Cleanup recommendations (review before archive)
@@ -61,7 +61,8 @@ Set each under **Repository → About (gear icon)**. Keep descriptions concise a
 
 | Repository | Suggested About description | Suggested Topics |
 |---|---|---|
-| [priority-access-bot](https://github.com/Scumbagsss/priority-access-bot) | Runnable FastAPI + SQLite approval API demo with tests; private Discord integration case study. | `python`, `fastapi`, `rest-api`, `sqlite`, `backend`, `automation` |
+| [priority-access-bot](https://github.com/Scumbagsss/priority-access-bot) | Runnable FastAPI demo with expiring bearer sessions, SQLite approvals and 44 tests. | `python`, `fastapi`, `rest-api`, `sqlite`, `authentication`, `backend` |
+| [discord-config-manager](https://github.com/Scumbagsss/discord-config-manager) | Runnable Python/SQLite settings service: optimistic versions, audit, batch transactions and 36 tests. | `python`, `sqlite`, `configuration`, `backend`, `automation`, `testing` |
 | [advanced-discord-ticket-bot](https://github.com/Scumbagsss/advanced-discord-ticket-bot) | Runnable Python/SQLite ticket workflow demo with audit history, staff rules and tests. | `python`, `sqlite`, `ticket-system`, `discord`, `automation` |
 | [dayz-server-monitor-bot](https://github.com/Scumbagsss/dayz-server-monitor-bot) | Runnable synthetic monitoring pipeline: JSONL, UTC timestamps, SQLite, metrics and tests. | `python`, `sqlite`, `data-processing`, `monitoring`, `dayz` |
 | [BOT](https://github.com/Scumbagsss/BOT) | Private-source DeadCity operations platform case study: support, moderation and monitoring. | `python`, `discord`, `dayz`, `automation`, `case-study` |
