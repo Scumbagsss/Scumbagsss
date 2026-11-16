@@ -1,70 +1,73 @@
 <div align="center">
 
 # Scumbagsss
+### Python Backend · Automation Engineering
 
-### Python Backend Developer · Automation Engineer
+**Turning manual workflows, event streams and external APIs into practical backend tools.**
 
-**I build backend automation and Discord-integrated systems that make complex workflows easier to operate.**
-
-[![Python](https://img.shields.io/badge/Python-Backend-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/Scumbagsss?tab=repositories)
-![AsyncIO](https://img.shields.io/badge/AsyncIO-Event--driven-22272E?style=flat-square)
-![Discord](https://img.shields.io/badge/discord.py-Integrations-5865F2?style=flat-square&logo=discord&logoColor=white)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/Scumbagsss?tab=repositories)
+![AsyncIO](https://img.shields.io/badge/asyncio-Event%20Processing-334155?style=flat-square)
 ![SQLite](https://img.shields.io/badge/SQLite-Persistence-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![Tests](https://img.shields.io/badge/pytest-Testing-0A9EDC?style=flat-square)
+![Discord](https://img.shields.io/badge/discord.py-Integrations-5865F2?style=flat-square&logo=discord&logoColor=white)
+
+**[Runnable Python demos](#runnable--verifiable-python)** · **[Commercial case studies](#commercial--private-source-case-studies)** · **[Project index](PORTFOLIO.md)**
 
 </div>
 
 ---
 
-## About me
+## Hello
 
-I work on **Python services, automation, API integrations and operational tooling**. My projects often connect Discord interfaces with databases, external services and event-driven backend logic.
+I build Python automation and backend services for community operations, server infrastructure and workflows that need **reliable state, clear audit trails and useful integrations**.
 
-My focus is on systems people actually use: structured support requests, staff approval flows, server monitoring, audit trails and activity analysis. I'm interested in both **Python backend roles** and **commercial automation projects**.
+My work includes asynchronous Discord applications, REST API consumers, SQLite-backed services, log/event analysis and staff approval systems.
 
-## Selected projects
+This portfolio separates **verifiable public code** from **documented commercial projects**. There is no claim that private-source demonstrations can be installed from their public skeletons.
 
-| Project | What it solves | Technical focus |
-| :--- | :--- | :--- |
-| **[DeadCity Automation Platform](https://github.com/Scumbagsss/BOT)** | Community operations: player support, moderation alerts, staff workflows and server integrations | Asynchronous Python, Discord interactions, persistence, event processing |
-| **[SpawnSet Dupe Detector](https://github.com/Scumbagsss/spawnset-dupe-detector)** | Investigation of suspicious patterns in game-server activity | Log parsing, correlation, time windows, case state, tests |
-| **[Priority Access Bot](https://github.com/Scumbagsss/priority-access-bot)** | Review and management of server-access entitlements | API integration, validation, authorization, state transitions |
-| **[DayZ Transport Market](https://github.com/Scumbagsss/dayz-transport-market-bot)** | Moderated vehicle listings, reservations and ownership workflows | Data modeling, permission checks, transactional workflows |
-| **[Discord Ticket Backend Demo](https://github.com/Scumbagsss/advanced-discord-ticket-bot)** | Runnable, fictional ticket workflow with a private commercial case study | Python 3.11+, SQLite, transactions, authorization rules, unit tests and CI |
+## Runnable & verifiable Python
 
-**Important:** Some repositories above are **private-source portfolio case studies**, not deployable software. The [Discord Ticket Backend Demo](https://github.com/Scumbagsss/advanced-discord-ticket-bot) is a separate, runnable public implementation with synthetic data and automated tests. Proprietary code, server settings and personal data remain private.
+These are independently runnable **synthetic demonstrations** with no live Discord credentials, customer data or private production logic.
 
-## Engineering focus
+| Project | What you can inspect | Verification |
+|---|---|---|
+| **[Ticket Workflow Backend](https://github.com/Scumbagsss/advanced-discord-ticket-bot)** | SQLite storage, state transitions, staff permissions, audit history, HTML export | [CI](https://github.com/Scumbagsss/advanced-discord-ticket-bot/actions/workflows/python-demo.yml) · 19 unit tests |
+| **[Server Monitoring Pipeline](https://github.com/Scumbagsss/dayz-server-monitor-bot)** | JSONL ingestion, validation, UTC time normalization, deduplication, SQLite, daily metrics | [CI](https://github.com/Scumbagsss/dayz-server-monitor-bot/actions/workflows/monitor-demo.yml) · 26 unit tests |
 
-| Backend & integrations | Data & operations | Quality |
-| :--- | :--- | :--- |
-| Python, asyncio, REST API consumers, HTTP clients | SQLite, aiosqlite, MySQL integrations, event and log processing | Modular services, structured logging, permission boundaries, pytest |
-| Discord Cogs, slash commands, buttons and modals | Workflow state, scheduled jobs, server snapshots | Timeouts, retries, duplicate-event handling, reproducible examples |
+Both demos run on Python 3.11+ using only its standard library. They are **educational backend examples**, not complete commercial deployments.
 
-## Featured work: DeadCity
+## Commercial & private-source case studies
 
-The [DeadCity case study](https://github.com/Scumbagsss/BOT) shows how a community operations platform can connect **support tickets, moderation, application review and server monitoring** through one Discord-based interface.
+| System | Problem solved | Engineering themes |
+|---|---|---|
+| **[DeadCity Automation Platform](https://github.com/Scumbagsss/BOT)** | Player support, staff tools, moderation and server operations | Discord Cogs, async Python, persistence, integrations, logging |
+| **[SpawnSet Activity Investigation](https://github.com/Scumbagsss/spawnset-dupe-detector)** | Review of suspicious game-server activity and log relationships | Event processing, timelines, case state, data quality |
+| **[Priority Access Workflow](https://github.com/Scumbagsss/priority-access-bot)** | Identity checks, staff approval and entitlement delivery | REST integration, authorization, idempotency, failure handling |
+| **[Transport Marketplace](https://github.com/Scumbagsss/dayz-transport-market-bot)** | Moderated listings and reservations | Data modeling and multi-step workflows |
 
-In the reviewed private source snapshot, the activity-analysis subsystem included **27 automated tests, all passing locally**. That result applies to this subsystem—not to the entire application.
+Private projects are described through architecture, case-study documentation and limited interfaces. Sensitive code, player records and credentials remain excluded.
 
-**[Explore the project →](https://github.com/Scumbagsss/BOT)**
+## Technical focus
 
-## How I work
+- **Backend:** Python, asyncio, service boundaries, validation, REST API consumers
+- **Data:** SQLite, aiosqlite, MySQL integrations, structured logs, historical snapshots
+- **Workflow design:** permissions, approval state, auditability, retry and duplicate-event handling
+- **Quality:** unit tests, GitHub Actions, reproducible synthetic examples and clear documentation
 
-- **Clear boundaries:** separate interaction handlers, domain rules, integrations and persistence where possible.
-- **Operational safety:** protect credentials, enforce staff permissions and keep user records private.
-- **Reliability:** think about API failures, retries, stale snapshots and repeated events.
-- **Honest documentation:** distinguish implemented behavior, private source and planned improvements.
+## Featured project: DeadCity
+
+The [DeadCity engineering case study](https://github.com/Scumbagsss/BOT/blob/main/docs/CASE_STUDY.md) explains a Discord-integrated operations platform with ticket handling, application review and moderation alerts.
+
+A reviewed private source snapshot included **27 locally passing tests in its activity-investigation subsystem**. This result does not represent full application coverage.
 
 ## Collaboration
 
-I'm open to **Python backend opportunities**, automation work and Discord-related integrations.
+Open to **Python backend opportunities** and **commercial automation / integrations**.
 
-For project discussions, use the contact options on my [GitHub profile](https://github.com/Scumbagsss).
+Contact me through [GitHub](https://github.com/Scumbagsss).
 
 <details>
-<summary><b>Кратко на русском</b></summary>
+<summary><b>По-русски</b></summary>
 
-Разрабатываю Python-системы автоматизации: Discord-интеграции, обработку событий и логов, работу с API и базами данных, административные панели и процессы согласования. Рассматриваю задачи как по backend-разработке, так и по коммерческой автоматизации.
+Разрабатываю Python-системы автоматизации: сервисы с базами данных и API, Discord-интеграции, обработку событий и логов, административные процессы и инструменты для команд. В публичном портфолио есть два запускаемых демопроекта с тестами, а коммерческие проекты представлены как технические кейсы без публикации закрытого кода.
 
 </details>
